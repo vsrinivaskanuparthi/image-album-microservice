@@ -1,0 +1,29 @@
+{
+  "name": "image-album-microservice",
+  "version": "1.0.0",
+  "description": "sample image album node.js microservice",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vsrinivaskanuparthi/image-album-microservice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vsrinivaskanuparthi/image-album-microservice/issues"
+  },
+  "homepage": "https://github.com/vsrinivaskanuparthi/image-album-microservice#readme",
+  "dependencies": {
+    "boom": "^4.2.0",
+    "hapi": "^16.1.0",
+    "hapi-swagger": "^7.7.0",
+    "inert": "^4.1.0",
+    "lodash": "^4.17.13",
+    "mongoose": "^5.9.7",
+    "request": "^2.80.0",
+    "vision": "^4.1.1"
+  }
+}
