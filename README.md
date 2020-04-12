@@ -9,23 +9,25 @@ sample image album node.js microservice
 
 3. after npm installing run command    # npm start #
 
-4. the server will come to running start on localhost on PORT 8080
+4. the server will come to running state on localhost on PORT 8080
 
 
-# endpoints of microservice
 
-# 1. http://localhost:8080/helath  (to check status of microservice)
 
-# 2. http://localhost:8080/docs    (swagger documentation) (it will provide you all endpoints with details and     request samples).
+# swagger documentation of microservice endpoints
+
+1. open http://localhost:/docs to read more about swagger documentation
+
+
 
 
 # docker file information
 
-there is alreday written docker file.
+# there is alreday written docker file.
 
 # steps to run application in docker container
 
-# 1. docker build -t image-album-microservice:tag .
+ 1. docker build -t image-album-microservice:tag .
 
-# 2. docker run -d -p 8080:8080 image-album-microservice
+ 2. docker run -d -p 8080:8080 image-album-microservice
 
