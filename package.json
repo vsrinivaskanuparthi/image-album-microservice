@@ -4,7 +4,8 @@
   "description": "sample image album node.js microservice",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "find ./tests -name '*_test.js' | xargs mocha -R spec"
   },
   "repository": {
     "type": "git",
@@ -17,11 +18,16 @@
   },
   "homepage": "https://github.com/vsrinivaskanuparthi/image-album-microservice#readme",
   "dependencies": {
+    "amqplib": "^0.5.5",
     "boom": "^4.2.0",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "dotenv": "^8.2.0",
     "hapi": "^16.1.0",
     "hapi-swagger": "^7.7.0",
     "inert": "^4.1.0",
     "lodash": "^4.17.13",
+    "mocha": "^7.1.1",
     "mongoose": "^5.9.7",
     "request": "^2.80.0",
     "vision": "^4.1.1"

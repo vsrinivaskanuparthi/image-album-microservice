@@ -19,7 +19,6 @@ class Album {
 
   static schema () {
     return {
-      albumNumber: joi.string(),
       name: joi.string().required(),
       description: joi.string().required()
     }

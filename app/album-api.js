@@ -15,7 +15,6 @@ const health = {
     tags: ['api'],
     description: 'Health check API',
     plugins: {
-      // Swagger model definition
       'hapi-swagger': {
         responses: {
           200: {
@@ -81,11 +80,11 @@ const saveAlbum = {
 //delete album along with respective images
 const deleteAlbum = {
   method: 'DELETE',
-  path: '/album/{albumNumber}',
+  path: '/album/{albumId}',
   config: {
     tags: ['api'],
     description: 'Delete an album',
-    notes: 'Delete an album by albumNumber',
+    notes: 'Delete an album by albumId',
     plugins: {
       'hapi-swagger': {
         responses: {
@@ -97,12 +96,12 @@ const deleteAlbum = {
     },
     validate: {
       params: {
-        albumNumber: joi.string()
+        albumId: joi.string()
       }
     }
   },
   handler: function (request, reply) {
-    let result = service.deleteAlbum(request.params.albumNumber)
+    let result = service.deleteAlbum(request.params.albumId)
     result.then((response) => {
       return reply({ status: 200, message: 'album deleted successfully' }).code(200)
     }).catch((err) => {
@@ -197,11 +196,11 @@ const deleteImage = {
 //get album images with album Id
 const getAlbumImages = {
   method: 'GET',
-  path: '/album/images/{albumNumber}',
+  path: '/album/images/{albumId}',
   config: {
     tags: ['api'],
-    description: 'Get album images by albumNumber',
-    notes: 'Get images by albumNumber',
+    description: 'Get album images by albumId',
+    notes: 'Get images by albumId',
     plugins: {
       'hapi-swagger': {
         responses: {
@@ -214,12 +213,12 @@ const getAlbumImages = {
     },
     validate: {
       params: {
-        albumNumber: joi.string()
+        albumId: joi.string()
       }
     }
   },
   handler: function (request, reply) {
-    let result = service.getAlbumImages(request.params.albumNumber)
+    let result = service.getAlbumImages(request.params.albumId)
     result.then((images) => {
       return reply(images)
     }).catch((err) => {

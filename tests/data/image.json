@@ -1,0 +1,8 @@
+{
+    "saveImage": {
+        "name": "image1",
+        "description": "image description",
+        "albumId": "5e96b98f921de547448a8ba3",
+        "image": "base64"
+    }
+}

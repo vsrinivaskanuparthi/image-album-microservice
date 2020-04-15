@@ -2,11 +2,14 @@ const hapi = require('hapi')
 const swagger = require('hapi-swagger')
 const inert = require('inert')
 const vision = require('vision')
-
+const connect = require('mongoose').connect
 const config = require('./config')
 const routes = require('./app/routes')
+const dotenv = require('dotenv')
 
 const server = new hapi.Server()
+
+dotenv.config()
 
 server.connection({
   host: '0.0.0.0',
@@ -46,6 +49,14 @@ server.register(plugins, (err) => {
 
     console.log(`Server is running:`, { pid: process.pid, uri: server.info.uri })
   })
+})
+
+connect(process.env.DATASOURCE_URL, (err, res) => {
+  if (err) {
+      console.log(err);
+  } else {
+      console.log('connected to mongodb');
+  }
 })
 
 module.exports = server
