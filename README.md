@@ -1,14 +1,4 @@
 
-@ Author
-
-****
-# Srinivas Kanuparthi
-
-Portfolio : http://portfolio-sk.s3-website.us-east-2.amazonaws.com/about-me/index.html
-
-Linkedin  :  https://www.linkedin.com/in/srinivas-kanuparthi-367a36186
-
-****
 
 # image-album-microservice
 sample image album node.js microservice
@@ -28,6 +18,8 @@ sample image album node.js microservice
 # swagger documentation of microservice endpoints
 
 1. open http://localhost:/docs to read more about swagger documentation
+
+![Alt text](./apis.png "Image Album Service APIs")
 
 
 # docker file information
@@ -63,4 +55,17 @@ sample image album node.js microservice
    1. to run test cases individully run command `./node_modules/.bin/mocha tests/testFileName.js`
 
    2. to run all unit test cases synchronously run command `npm run test`
+   
+   
+   
+@ Author
+
+****
+# Srinivas Kanuparthi
+
+Portfolio : http://portfolio-sk.s3-website.us-east-2.amazonaws.com/about-me/index.html
+
+Linkedin  :  https://www.linkedin.com/in/srinivas-kanuparthi-367a36186
+
+****
 
