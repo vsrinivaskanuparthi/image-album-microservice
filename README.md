@@ -19,8 +19,6 @@ sample image album node.js microservice
 
 1. open http://localhost:/docs to read more about swagger documentation
 
-![Alt text](./apis.png "Image Album Service APIs")
-
 
 # docker file information
 
