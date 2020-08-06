@@ -61,8 +61,7 @@ sample image album node.js microservice
 ****
 # Srinivas Kanuparthi
 
-Portfolio : http://portfolio-sk.s3-website.us-east-2.amazonaws.com/about-me/index.html
-
+Portfolio :  http://srinivas-kanuparthi-portfolio.s3-website.us-east-2.amazonaws.com/#/
 Linkedin  :  https://www.linkedin.com/in/srinivas-kanuparthi-367a36186
 
 ****
