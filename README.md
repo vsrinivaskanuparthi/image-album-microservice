@@ -1,7 +1,7 @@
 
 
 # image-album-microservice
-sample image album node.js microservice
+sample image album node.js microservice which stores images into an album entity and maintains the images by mapping to the appropriate album
 
 # how to run server in local machine ?
 
